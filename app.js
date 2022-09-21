@@ -43,6 +43,12 @@ hesaplaButon.onclick = (e) => {
     oran = 1.99;
   } else if (document.querySelector("#select").value == "Arac Kredisi") {
     oran = 1.79;
+  } else if (
+    document.querySelector("#tutar").value == "" ||
+    document.querySelector("#vade").value == "" ||
+    document.querySelector("#select").value == ""
+  ) {
+    alert("Lütfen kredi türü giriniz");
   }
   faiz = oran / 100;
 
