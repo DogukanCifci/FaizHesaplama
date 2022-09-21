@@ -5,3 +5,4 @@ https://kredi-hesapla.netlify.app/
 ## Aylık faizi hesaplamak için resimdeki formül kullanılabilir.
 
 ![Aylık Faiz](./hesapFormulu.png)
+![WebSite](./interestrate.png)
