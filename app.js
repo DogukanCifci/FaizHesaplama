@@ -43,13 +43,15 @@ hesaplaButon.onclick = (e) => {
     oran = 1.99;
   } else if (document.querySelector("#select").value == "Arac Kredisi") {
     oran = 1.79;
-  } else if (
-    document.querySelector("#tutar").value == "" ||
-    document.querySelector("#vade").value == "" ||
-    document.querySelector("#select").value == ""
-  ) {
+  } else {
     alert("Lütfen kredi türü giriniz");
   }
+  if (document.querySelector("#vade").value === "") {
+    alert("Lütfen vade sayisini giriniz...");
+  } else if (document.querySelector("#tutar").value === "") {
+    alert("Lütfen cekmek istediginiz kredi miktarini yaziniz...");
+  }
+
   faiz = oran / 100;
 
   krediTutari = document.querySelector("#tutar").value;
